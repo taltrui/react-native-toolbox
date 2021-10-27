@@ -1,9 +1,14 @@
-import { NativeModules } from 'react-native';
+import Camera, { CameraType } from './Camera';
+import FS, { FSType } from './FS';
 
-type ToolboxType = {
-  multiply(a: number, b: number): Promise<number>;
+interface ToolboxType {
+  Camera: CameraType;
+  FS: FSType;
+}
+
+const Toolbox = {
+  Camera,
+  FS,
 };
-
-const { Toolbox } = NativeModules;
 
 export default Toolbox as ToolboxType;

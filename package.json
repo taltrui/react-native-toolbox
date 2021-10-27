@@ -71,6 +71,10 @@
     "react": "*",
     "react-native": "*"
   },
+  "dependencies": {
+    "react-native-document-picker": "^6.0.3",
+    "react-native-image-picker": "^4.0.6"
+  },
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
